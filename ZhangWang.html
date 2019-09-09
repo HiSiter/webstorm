@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>张王签名方案</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/zw.js"></script>
+</head>
+<body>
+<div class="rg_layout" style="border-radius: 30px;box-shadow: 2px 1px 13px 1px">
+    <div class="rg_left">
+        <p>张王签名方案</p>
+        <p>ZhangWang<br/>SignatureScheme</p>
+    </div>
+    <div class="rg_center" >
+        <div class="rg_form">
+            <!--定义表单-->
+            <form action="#" method="get" id="form">
+                <table>
+                    <tr>
+                        <td class="td_left">
+                            <label for="p"> p</label>
+                        </td>
+                        <td class="td_right">
+                            <input id="p" name="p" placeholder="请输入一个大质数p">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">
+                            <label for="g"> g </label>
+                        </td>
+                        <td class="td_right">
+                            <input id="g" name="g" placeholder="请输入g">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">
+                            <label for="x"> x </label>
+
+                        </td>
+                        <td class="td_right">
+                            <input id="x" name="x" placeholder="请输入x(密钥), 满足gdc(x,p-1)=1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">
+                            <label for="M"> M </label>
+                        </td>
+                        <td class="td_right">
+                            <input id="M" name="M" placeholder="请输入消息M">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">
+                            <label for="k"> k</label>
+
+                        </td>
+                        <td class="td_right">
+                            <input id="K" name="k" placeholder="请输入k">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="td_sub">
+                            <input onclick=showResult() type="button" id="btn_sub" value="结果">
+                            <input id="btn_sub2" type="reset" value="重置">
+                            <br>
+                            <textarea id="output" name="final_result">
+                            </textarea>
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+    </div>
+    <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+
+
+
+</body>
+</html>
